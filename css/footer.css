@@ -1,0 +1,186 @@
+.footer {
+  background-color: #222;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--black-haze);
+  padding: 19px 20px 70px 15px;
+}
+
+.footer__left, footer__right {
+  flex: 1 1 33.3%;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  max-width: 21%;
+  margin-right: 20px;
+}
+
+.footer__middle {
+  flex: 0 0 33%;
+  margin-right: 20px;
+  padding-top: 14px;
+  min-width: 575px;
+}
+
+.footer__right {
+  padding-top: 76px;
+  max-width: 20%;
+}
+
+.footer__logo {
+  margin-bottom: 16px;
+}
+
+.footer__list {
+  margin-bottom: 114px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.social__link {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social__link_facebook {
+  background-image: url(../img/fb.svg);
+}
+
+.social__link_vk {
+  background-image: url(../img/vk.svg);
+}
+
+.social__link_instagram {
+  background-image: url(../img/instagram.svg);
+}
+
+.social__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__subtitle {
+  margin-bottom: 28px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input, .form__textarea {
+  margin-bottom: 25px;
+  padding: 15px 27px;
+  border: none;
+  color: var(--back-text);
+  background-color: #414141;
+}
+
+.form__textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form__input {
+  min-height: 61px;
+}
+
+.form__btn {
+  margin-right: 23px;
+  /* max-width: 50%; */
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form__btn:hover {
+  background-color: var(--orange-peel);
+}
+
+.form__btn:active {
+  background-color: var(--active)
+}
+
+.form__inner {
+  display: flex;
+  align-items: center;
+}
+
+/* .form__inner-flex {
+  flex: 1 1 50%;
+} */
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.checkbox__input {
+  position: absolute;
+  flex-shrink: 0;
+  opacity: 0;
+}
+
+.checkbox__text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox__text::before {
+  content: "";
+  flex-shrink: 0;
+  margin-right: 7px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid var(--black-haze);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  outline: 2px solid white;
+}
+
+/* если checkbox__input выбран или включен, то мы обращаемся к checbox__text::before */
+
+.checkbox__input:checked+.checkbox__text::before {
+  background-image: url("../img/check.svg");
+}
+
+/* если checbox__input в фокусе, то мы должны обратиться к checkbox__text::arter */
+
+.checkbox__input:focus+.checkbox__text::after {
+  opacity: 1;
+}

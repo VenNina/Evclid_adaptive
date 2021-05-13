@@ -1,0 +1,5 @@
+// "usestrech";
+
+$(function () {
+  $("#accordion").accordion();
+});

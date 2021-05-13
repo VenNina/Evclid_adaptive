@@ -1,0 +1,87 @@
+.work__content {
+  position: relative;
+}
+
+.work__content::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  overflow: hidden;
+  /* min-width: 870px;
+  min-height: 465px; */
+  background-image: url(../img/work_background.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work__subtitle {
+  margin-bottom: 52px;
+}
+
+.work__subhead {
+  width: 43%;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 41px;
+}
+
+.work__item:not(:last-child) {
+  margin-right: 75px;
+}
+
+/*  */
+
+.work__descr {
+  width: 43%;
+  margin-bottom: 64px;
+}
+
+.work__inner {
+  display: flex;
+}
+
+.work__btn-step {
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  background: transparent;
+  transition: color .3s ease;
+}
+
+.work__btn:hover {
+  color: var(--orange-peel);
+}
+
+.work__btn:active {
+  color: var(--active);
+}
+
+.work__link {
+  display: inline-block;
+  margin-right: 28px;
+  transition: background-color .3s ease;
+}
+
+.work__link-doc {
+  display: inline-block;
+  padding: 18px 39px;
+  transition: color .3s ease, background-color .3s ease;
+}
+
+.work__link-doc:hover {
+  color: white;
+  background-color: #666;
+}
+
+.work__link-doc:active {
+  color: white;
+  background-color: #000;
+}

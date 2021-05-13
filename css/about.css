@@ -1,0 +1,104 @@
+.about__subtitle {
+  margin-bottom: 25px;
+}
+
+.about__descr {
+  width: 71%;
+  margin-bottom: 44px;
+}
+
+.about__icon::before {
+  content: "";
+  display: inline-block;
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/i_Тултип.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(3px);
+}
+
+.about__inner {
+  display: flex;
+}
+
+.about__column {
+  flex: 1 1 50%;
+  width: 48%;
+}
+
+.about__column:not(:last-child) {
+  margin-right: 32px;
+}
+
+.about__left {
+  display: flex;
+  align-items: flex-end;
+  /* min-width: 658px;*/
+  min-height: 622px;
+  background-image: url(../img/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 66px 31px 53px;
+  max-width: 100%;
+  background-color: var(--hurricane);
+}
+
+.left__descr {
+  margin-right: 15px;
+  max-width: 67%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 38px;
+  color: var(--back-text);
+}
+
+.about__link {
+  /* max-width: 29%; */
+  transition: background-color .3s ease;
+}
+
+.about__link:hover {
+  background-color: var(--peel);
+  /* outline: 3px solid var(--pell) */
+}
+
+.about__link:active {
+  background-color: var(--active);
+  border: 3px solid var(--active);
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right__content {
+  flex: 1 1 50%;
+  padding: 65px 109px 30px 296px;
+  border: 1px solid var(--black-haze);
+  background-position: 8% 43%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.right__content:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.right__content_background_cube {
+  background-image: url(../img/Group25.svg);
+}
+
+.right__content_background_shure {
+  background-image: url(../img/Group24.svg);
+}
